@@ -1,0 +1,34 @@
+{
+  "name": "routes-service-twtg",
+  "version": "1.0.0",
+  "description": "microservice of the route",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install-dev-dep": "npm run install-middleware && npm run install-configs && npm run install-orm",
+    "install-middleware": "npm uninstall djorellanabmrb/middlewares-twtg#master && npm install --save djorellanabmrb/middlewares-twtg#master -or-commit-or-tag",
+    "install-configs": "npm uninstall djorellanabmrb/configs-twtg#master && npm install --save djorellanabmrb/configs-twtg#master -or-commit-or-tag",
+    "install-odm": "npm uninstall djorellanabmrb/odm-twtg#master && npm install --save djorellanabmrb/odm-twtg#master -or-commit-or-tag"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/djorellanabmrb/authentication-service-twtg.git"
+  },
+  "author": "djorellanab",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/djorellanabmrb/routes-service-twtg/issues"
+  },
+  "homepage": "https://github.com/djorellanabmrb/routes-service-twtg#readme",
+  "dependencies": {
+    "awilix": "^4.2.6",
+    "configs-twtg": "github:djorellanabmrb/configs-twtg#master",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-validator": "^6.6.1",
+    "helmet": "^4.1.1",
+    "middlewares-twtg": "github:djorellanabmrb/middlewares-twtg#master",
+    "object-mapper": "^6.2.0",
+    "odm-twtg": "github:djorellanabmrb/odm-twtg#master"
+  }
+}
