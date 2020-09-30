@@ -5,3 +5,4 @@ module.exports = function(container){
         TraceabilityController: asClass(TraceabilityController).singleton(),
     });
 }
+
