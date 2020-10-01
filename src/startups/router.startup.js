@@ -15,3 +15,5 @@ module.exports = function router({HealthcheckMiddleware, InternationalizationMid
     router.use('/traceability', TraceabilityRouter);
     return router;
 }
+
+
